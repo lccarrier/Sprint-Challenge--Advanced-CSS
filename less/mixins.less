@@ -1,1 +1,30 @@
 // Mixins Here
+.flex-justify-center {
+    display: flex;
+    justify-content: center;
+  }
+
+.font-style {
+    text-decoration: none;
+    color: #45525E;
+    margin: 15px;
+    font-size: 16px;
+}
+
+
+.custom-btn(@width, @height, @border-radius, @bg-color, @color, @size){
+    width: @width;
+    height: @height;
+    border-radius: @border-radius;
+    background-color: @bg-color;
+    color: @color; 
+    font-size: @size;
+}
+
+
+.align-btn(@text-align, @display, @vert-align) {
+  text-align: @text-align;
+  display: @display;
+  vertical-align: @vert-align;
+}
+
